@@ -2,7 +2,7 @@
 
 clone the project into your local directory https://github.com/appium/appium-docker-android.git
 
-#run the terminal from the IntelliJ 
+# run the terminal from the IntelliJ 
 
 # build all the tools required on the docker container 
 docker build -t "appium/appium:local" -f Appium/Dockerfile Appium
