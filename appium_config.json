@@ -1,0 +1,10 @@
+{
+  "devicename": "Lenovo",
+  "automationName": "UiAutomator2",
+  "udid": "HGR4T8AG",
+  "platformName": "Android",
+  "platformVersion": "13",
+  "appPackage": "com.google.android.apps.youtube.music",
+  "appActivity": "com.google.android.apps.youtube.music.activities.MusicActivity",
+  "remoteAdbHost": "host.docker.internal"
+}
