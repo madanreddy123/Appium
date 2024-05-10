@@ -1,16 +1,19 @@
 import io.appium.java_client.AppiumDriver;
+import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.Test;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.URL;
+import java.time.Duration;
 
 public class Appium {
 
     /// launch the appium
     // connect the device to the machine
-
 
     @Test
 
@@ -46,6 +49,8 @@ public class Appium {
                cap.setCapability("remoteAdbHost", "host.docker.internal");
                 // Initialize Appium driver
                 AppiumDriver driver = new AppiumDriver(new URL("http://0.0.0.0:4723/"), cap);
+
+                driver.manage().timeouts().implicitlyWait(Duration.ofMinutes(1));
             }
 
             System.out.println("driver initiated");
