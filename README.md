@@ -17,4 +17,6 @@ adb devices
 
 # then run the code with the capabilities 
 
+# to connect wireless device containing the same network 
+docker run --privileged -d -p 4723:4723  -e APPIUM_DEVICE_UDID=<ip address of the real device > --name appium-container appium/appium
 

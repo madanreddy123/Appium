@@ -41,7 +41,8 @@ public class Appium {
                 DesiredCapabilities cap = new DesiredCapabilities();
                 cap.setCapability("devicename", "Lenovo");
                 cap.setCapability("automationName", "UiAutomator2");
-                cap.setCapability("udid", "HGR4T8AG");
+//                cap.setCapability("udid", "HGR4T8AG");
+                cap.setCapability("udid", "192.168.1.122:33045");
                 cap.setCapability("platformName", "Android");
                 cap.setCapability("platformVersion", "13");
                 cap.setCapability("appPackage", "com.google.android.apps.youtube.music");
