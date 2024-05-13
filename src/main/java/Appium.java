@@ -41,8 +41,8 @@ public class Appium {
                 DesiredCapabilities cap = new DesiredCapabilities();
                 cap.setCapability("devicename", "Lenovo");
                 cap.setCapability("automationName", "UiAutomator2");
-//                cap.setCapability("udid", "HGR4T8AG");
-                cap.setCapability("udid", "192.168.1.122:33045");
+//                cap.setCapability("udid", "after connecting the real device you will find the udid after running the adb device command from terminal");
+                cap.setCapability("udid", "get the ip address from your mobile device");
                 cap.setCapability("platformName", "Android");
                 cap.setCapability("platformVersion", "13");
                 cap.setCapability("appPackage", "com.google.android.apps.youtube.music");
