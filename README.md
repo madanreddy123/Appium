@@ -20,3 +20,14 @@ adb devices
 # to connect wireless device containing the same network 
 docker run --privileged -d -p 4723:4723  -e APPIUM_DEVICE_UDID=<ip address of the real device > --name appium-container appium/appium
 
+docker run --privileged -d -p 4723:4723  -v /dev/bus/usb:/dev/bus/usb --name appium-container appium/appium
+
+docker run -d -p 4723:4723 -p 8000:8000 --name appium-server apk-container
+
+
+appium driver install uiautomator2
+
+appium plugin install execute-driver
+
+docker cp app.apk:/shared/files/app.apk
+
